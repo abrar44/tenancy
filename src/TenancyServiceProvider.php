@@ -49,7 +49,7 @@ class TenancyServiceProvider extends ServiceProvider
             if (method_exists($bootstrapper, '__constructStatic')) {
                 $bootstrapper::__constructStatic($this->app);
             }
-
+            
             $this->app->singleton($bootstrapper);
         }
 
